@@ -70,7 +70,7 @@ while True:
 		total += 1
 
 
-print("{} face images captured and stored".format(total))
+print("{} face dataset captured and stored".format(total))
 print("\nWe're done!\n")
 cv2.destroyAllWindows()
 stream.stop()
