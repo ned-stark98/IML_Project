@@ -58,7 +58,7 @@ while True:
 
 		# writing face in grayscale IF a face has been detected
 		if boxed.any() and detected.any():
-			cv2.imwrite(p, cv2.cvtColor(boxed, cv2.COLOR_BGR2GRAY))
+			cv2.imwrite("images/"p, cv2.cvtColor(boxed, cv2.COLOR_BGR2GRAY))
 
 		else:
 			continue
