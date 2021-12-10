@@ -36,11 +36,11 @@ while (True):
             #name_conf = str(name) + str(conf)
             #print(name_conf)
 
-            cv2.putText(frame, name, (x + 5, y - 5), font, 1, color, 2)
-            cv2.putText(frame, str(conf), (x + 5, y + h - 5), font, 1, color, 1)
-            #cv2.putText(frame, name_conf, (x + 5, y + h - 5), font, 1, color, 1)
+            cv2.putText(frame, name, (x + 5, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+            cv2.putText(frame, str(conf), (x + 5, y + h - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 1)
+            #cv2.putText(frame, name_conf, (x + 5, y + h - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 1)
         else:
-            cv2.putText(frame, "Unknown", (x + 5, y - 5), font, 1, color, 2)
+            cv2.putText(frame, "Unknown", (x + 5, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
         color = (255, 0, 0)  # BGR 0-255
         stroke = 2
